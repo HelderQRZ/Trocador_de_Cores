@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocador de Cores</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            top: 50%;
+
+        }
+
+        header {
+            text-align: center;
+            padding: 5px 32px;
+        }
+
+        .random {
+            background: linear-gradient(to bottom right, red, orange, yellow, green, cyan, blue, purple);
+            color: white;
+            border: none;
+            width: 160px;
+            height: auto;
+            margin: 1px 1px 1px 1px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: grab;
+        }
+
+        .red {
+            background: rgb(228, 57, 57);
+            color: white;
+            border: none;
+            width: 160px;
+            height: auto;
+            margin: 1px 1px 1px 1px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: grab;
+        }
+
+        .blue {
+            background: rgb(83, 84, 173);
+            color: white;
+            border: none;
+            width: 160px;
+            height: auto;
+            margin: 1px 1px 1px 1px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: grab;
+        }
+
+        .green {
+            background: rgb(90, 231, 24);
+            color: white;
+            border: none;
+            width: 160px;
+            height: auto;
+            margin: 1px 1px 1px 1px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: grab;
+        }
+
+        .white {
+            background: white;
+            color: black;
+            border: 100px;
+            width: 160px;
+            height: auto;
+            margin: 1px 1px 1px 1px;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: grab;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 32px;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Trocador de Cores</h1>
+    </header>
+    <section>
+        <div class="random" onclick="aleatorio()">
+            Mudar aleatoriamente
+        </div>
+        <div class="red" onclick="vermelho()">
+            Mudar para vermelho
+        </div>
+        <div class="blue" onclick="azul()">
+            Mudar para azul
+        </div>
+        <div class="green" onclick="verde()">
+            Mudar para verde
+        </div>
+        <div class="white" onclick="branco()">
+            Reset
+        </div>
+    </section>
+    <footer>
+        HelderQRZ - Dev Frontend
+    </footer>
+</body>
+
+<script>
+    function aleatorio() {
+        var r = Math.floor(Math.random() * 256)
+        var g = Math.floor(Math.random() * 256)
+        var b = Math.floor(Math.random() * 256)
+        document.body.style.background = `rgb(${r}, ${g}, ${b})`
+        
+    }
+    function vermelho() {
+        document.body.style.background = 'rgb(228, 57, 57)'
+    }
+    function azul() {
+        document.body.style.background = 'rgb(83, 84, 173)'
+    }
+    function verde() {
+        document.body.style.background = 'rgb(90, 231, 24)'
+    }
+    function branco() {
+        document.body.style.background = 'rgb(255,255,255)'
+    }
+</script>
+
+</html>
