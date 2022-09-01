@@ -10,6 +10,10 @@ header {
     padding: 5px 32px;
 }
 
+section {
+    user-select: none;
+}
+
 .random {
     background: linear-gradient(to bottom right, red, orange, yellow, green, cyan, blue, purple);
     color: white;
@@ -40,8 +44,8 @@ header {
     cursor: grab;
 }
 
-.blue {
-    background: rgb(83, 84, 173);
+.green {
+    background: rgb(90, 231, 24);
     color: white;
     border: none;
     width: 160px;
@@ -55,8 +59,8 @@ header {
     cursor: grab;
 }
 
-.green {
-    background: rgb(90, 231, 24);
+.blue {
+    background: rgb(83, 84, 173);
     color: white;
     border: none;
     width: 160px;
