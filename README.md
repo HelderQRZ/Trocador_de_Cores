@@ -1,9 +1,10 @@
-# Trocador_de_Cores
-Trocador de Cores feito com HTML, CSS e JS.
+# Color Selector :art:
+Color Selector created with HTML, CSS e JS.
 
-Função: Trocar cores do background 
-  Aleatoriamente
-  Vermelho
-  Verde
-  Azul 
-  Reset (branco)
+Objective: Switch background color to :arrow_heading_down:
+
+-   Random
+-   Red
+-   Green
+-   Blue
+-   Reset

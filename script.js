@@ -1,4 +1,4 @@
-function aleatorio() {
+function randomFunction() {
     var r = Math.floor(Math.random() * 256)
     var g = Math.floor(Math.random() * 256)
     var b = Math.floor(Math.random() * 256)
@@ -6,18 +6,18 @@ function aleatorio() {
 
 }
 
-function vermelho() {
+function redFunction() {
     document.body.style.background = 'rgb(228, 57, 57)'
 }
 
-function verde() {
+function greenFunction() {
     document.body.style.background = 'rgb(90, 231, 24)'
 }
 
-function azul() {
+function blueFunction() {
     document.body.style.background = 'rgb(83, 84, 173)'
 }
 
-function branco() {
+function resetFunction() {
     document.body.style.background = 'rgb(255,255,255)'
 }
